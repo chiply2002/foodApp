@@ -4,7 +4,7 @@ import { constants, images, FONTS, SIZES, COLORS } from '../../constants';
 
 import SignIn from '../Authentication/SignIn';
 
-import TextButton1 from '../../components/TextButton1';
+import TextButton from '../../components/TextButton';
 
 const OnBoarding = ({ navigation }) => {
 
@@ -96,7 +96,7 @@ const OnBoarding = ({ navigation }) => {
                         paddingHorizontal: SIZES.padding,
                         marginVertical: SIZES.padding
                     }}>
-                        <TextButton1 
+                        <TextButton
                             label="Skip" 
                             buttonContainerStyle={{
                                 backgroundColor: null
@@ -106,7 +106,7 @@ const OnBoarding = ({ navigation }) => {
                             }}
                             onPress={() => navigation.replace("SignIn")}
                         />
-                        <TextButton1 
+                        <TextButton
                             label="Next" 
                             buttonContainerStyle={{
                                 height: 60,
@@ -129,7 +129,7 @@ const OnBoarding = ({ navigation }) => {
                         paddingHorizontal: SIZES.padding,
                         marginVertical: SIZES.padding
                     }}>
-                        <TextButton1 
+                        <TextButton
                             label="Let's Get Started"
                             buttonContainerStyle={{
                                 height: 60,

@@ -8,7 +8,7 @@ import {
 
 import AuthLayout from './AuthLayout';
 import { FONTS, SIZES, COLORS, icons } from '../../constants';
-import { FormInput, TextButton1 } from '../../components';
+import { FormInput, TextButton } from '../../components';
 import { utils } from "../../utils";
 
 const ForgotPassword = ({ navigation }) => {
@@ -53,7 +53,7 @@ const ForgotPassword = ({ navigation }) => {
                 />
             </View>
 
-            <TextButton1
+            <TextButton
                 label="Send Email"
                 disable={isEnableSendEmail() ? false : true}
                 buttonContainerStyle={{

@@ -10,7 +10,7 @@ import AuthLayout from './AuthLayout';
 import { FONTS, SIZES, COLORS, icons } from '../../constants';
 import FormInput from '../../components/FormInput';
 import { utils } from "../../utils";
-import { CustomSwitch, TextButton1, TextIconButton1 } from '../../components';
+import { CustomSwitch, TextButton, TextIconButton1 } from '../../components';
 
 import { authentication } from '../firebase/firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
@@ -104,7 +104,7 @@ const SignUp = ({ navigation }) => {
                     }
                 />
 
-                <TextButton1
+                <TextButton
                     label="Sign Up"
                     disable={isEnableSignUp() ? false : true}
                     buttonContainerStyle={{
@@ -125,7 +125,7 @@ const SignUp = ({ navigation }) => {
                 }}>
                     <Text style={{color: COLORS.darkGray,...FONTS.body3}}>Already have an account?</Text>
 
-                    <TextButton1 
+                    <TextButton
                         label="Sign In"
                         buttonContainerStyle={{ backgroundColor: null}}
                         labelStyle={{

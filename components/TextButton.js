@@ -2,21 +2,17 @@ import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
 import { FONTS, COLORS } from '../constants';
 
-const TextButton = ({ label, labelStyle, buttonContainerStyle, onPress }) => {
+const TextButton1 = ({ buttonContainerStyle, disable, label, labelStyle, onPress }) => {
     return (
         <TouchableOpacity style={{
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: COLORS.primary,
             ...buttonContainerStyle
-        }} onPress={onPress}>
-            <Text style={{
-                color: COLORS.white,
-                ...FONTS.h3,
-                ...labelStyle
-            }}>{label}</Text>
+        }} disabled={disable} onPress={onPress}>
+            <Text style={{color: COLORS.white, ...FONTS.h3, ...labelStyle}}>{label}</Text>
         </TouchableOpacity>
     )
 }
 
-export default TextButton;
+export default TextButton1;

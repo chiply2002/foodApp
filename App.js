@@ -11,6 +11,7 @@ import thunk from "redux-thunk";
 import rootReducer from './stores/rootReducer';
 import OnBoarding from './screens/OnBoarding/OnBoarding';
 import { Otp, SignIn, SignUp, ForgotPassword, Home } from './screens';
+import FoodDetail from './screens/Food/FoodDetail';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,7 +25,7 @@ function App() {
     <Provider store={store}>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Home'>
-          <Stack.Screen name="Home" component={OnBoarding} />
+          <Stack.Screen name="Home" component={FoodDetail} />
           <Stack.Screen name="Home1" component={CustomDrawer} />
           <Stack.Screen name="OnBoarding" component={OnBoarding} />
           <Stack.Screen name="SignIn" component={SignIn} />

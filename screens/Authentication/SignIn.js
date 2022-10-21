@@ -10,7 +10,7 @@ import AuthLayout from './AuthLayout';
 import { FONTS, SIZES, COLORS, icons } from '../../constants';
 import FormInput from '../../components/FormInput';
 import { utils } from "../../utils";
-import { CustomSwitch, TextButton1, TextIconButton1 } from '../../components';
+import { CustomSwitch, TextButton, TextIconButton1 } from '../../components';
 
 const SignIn = ({ navigation }) => {
 
@@ -102,7 +102,7 @@ const SignIn = ({ navigation }) => {
                 </View>
 
                 {/* Sign In */}
-                <TextButton1
+                <TextButton
                     label="Sign In"
                     disabled={isEnableSignIn() ? false : true}
                     buttonContainerStyle={{
@@ -128,7 +128,7 @@ const SignIn = ({ navigation }) => {
                         Don't have an account?
                     </Text>
 
-                    <TextButton1
+                    <TextButton
                         label="Sign Up"
                         buttonContainerStyle={{ 
                             marginLeft: 3,

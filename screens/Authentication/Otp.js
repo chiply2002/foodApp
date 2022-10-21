@@ -8,7 +8,7 @@ import {
 
 import AuthLayout from './AuthLayout';
 import { FONTS, SIZES, COLORS, icons } from '../../constants';
-import { TextButton1 } from '../../components';
+import { TextButton } from '../../components';
 import OTPInputView from "@twotalltotems/react-native-otp-input";
 
 const Otp = ({ navigation }) => {
@@ -87,7 +87,7 @@ const Otp = ({ navigation }) => {
             </View>
 
             <View>
-                <TextButton1
+                <TextButton
                     label="Continue"
                     buttonContainerStyle={{
                         height: 50,
